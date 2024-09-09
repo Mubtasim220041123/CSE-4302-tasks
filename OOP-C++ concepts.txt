@@ -1,0 +1,45 @@
+
+access modifiers : public , private , protected 
+	Public members are accessible from anywhere outside the class.
+	Private members are accessible only within the class itself.
+	Protected members are accessible within the class itself and by derived classes (subclasses), but not from outside the class or from unrelated classes.
+	
+constructors , methods ,
+class attributes modification 
+
+**encapsulation : it allows me to specify the method to access and modify my class elements
+
+** abstraction : hiding the complex procedure of a function , so that it looks simple from outside ,
+	there are some classes that are abstract classes , if any other class contains it , they have to provide the impl. of the functions of abstract class
+	
+** inheritance : there is parent class and a child class , the child calss has the attributes of the parent class , but it can also have some attributes 
+	of its own
+	-> for ex : battle-planes have all the attributes of a normla plane , but it also has attributes of its own (like : shooting and etc )
+	-> inheritance is private by default , we have to declare it public if we want it so 
+	-> public , private and protected inheritance 
+	
+	-> in case of inheritance , the child class can directly access the protected and public domain (cannot access the private domain)
+	-> public and private inheritance : 
+	
+/*
+    inheritance :       public          private            protected
+    
+    private member :    not inherited   not inherited      not inherited
+    public member  :    public          private            protected
+    protected member:   protected       private            protected
+*/
+
+			
+	-> after inheritance , the parent constructor also gets copied , so define a new constructor inside child to override
+	
+**polymorphism (multiple forms):
+
+	-> when a parent class references to a child class object 
+	-> KEYWORD : "virtual" keyword is used to reduce the precedence of a function written in a parent class 
+	-> if the child class does not have the impl. of the same function , then the virtual function inside the parent class will be used 
+	-> in case of polymorphism , the inheritance must be public type ;
+	
+	
+** forward declaration
+	-> since compiler executes line by line , so if we want to use a function and define it later , we can use forward declaration 
+	->
